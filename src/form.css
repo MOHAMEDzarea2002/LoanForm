@@ -1,0 +1,72 @@
+.LoanForm {
+  text-align: center;
+  flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+.LoanForm form{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+
+}
+.LoanForm input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selectslary{
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #000000c7;
+  color: white;
+
+}
+.selectslary:hover{
+  background-color: #000000;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+#model {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #000000b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#model-content{
+  width: 500px;
+  padding: 10px;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+}
+
+#bt-submit{
+  background-color: #e60000;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button.disabled {
+  background-color: gray !important;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
