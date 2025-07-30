@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LoanForm/static/css/main.5c464c58.css",
+    "main.js": "/LoanForm/static/js/main.f4f72e8e.js",
+    "static/js/453.f9dee32d.chunk.js": "/LoanForm/static/js/453.f9dee32d.chunk.js",
+    "index.html": "/LoanForm/index.html",
+    "main.5c464c58.css.map": "/LoanForm/static/css/main.5c464c58.css.map",
+    "main.f4f72e8e.js.map": "/LoanForm/static/js/main.f4f72e8e.js.map",
+    "453.f9dee32d.chunk.js.map": "/LoanForm/static/js/453.f9dee32d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c464c58.css",
+    "static/js/main.f4f72e8e.js"
+  ]
+}
