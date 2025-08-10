@@ -68,7 +68,7 @@ export default function LoanForm({ titel }) {
   function handelNameChange(value) {
     setLoanInput({ ...loanInput, name: value });
   }
-  
+
   function handelAgeChange(value) {
     setLoanInput({ ...loanInput, age: value });
   }
