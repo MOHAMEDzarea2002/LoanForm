@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "../form.css";
 import Modal from "./model";
-export default function LoanForm() {
+import InputComponent from "./inputComponent";
+export default function LoanForm({ titel }) {
   // State to hold the error message
   const [ErrorMessage, setErrorMessage] = useState(null);
   // State to control the visibility of the modal
@@ -61,42 +62,44 @@ export default function LoanForm() {
       setShowModal(false);
     }
   }
+  function handelphoneNumberChange(value) {
+    setLoanInput({ ...loanInput, phoneNumber: value });
+  }
+  function handelNameChange(value) {
+    setLoanInput({ ...loanInput, name: value });
+  }
+  
+  function handelAgeChange(value) {
+    setLoanInput({ ...loanInput, age: value });
+  }
   // Render the loan application form
   // and the modal for success or error messages
   return (
     <div className="LoanForm flex" onSubmit={handleDivClick}>
+      {<h1 className="titel">{titel}</h1>}
       <form className="flex" style={{ flexDirection: "column" }}>
         <h1>Loan Application Form</h1>
         <hr></hr>
-        <label>Name:</label>
-        <input
-          type="text"
-          name="name"
+        <InputComponent
+          inputName={"Name"}
           value={loanInput.name}
-          onChange={(event) => {
-            setLoanInput({ ...loanInput, name: event.target.value });
-          }}
+          handleChange={handelNameChange}
         />
+
         <br />
-        <label>Phone:</label>
-        <input
-          type="tel"
-          name="phone"
+        <InputComponent
+          inputName={"PhoneNumber"}
           value={loanInput.phoneNumber}
-          onChange={(event) => {
-            setLoanInput({ ...loanInput, phoneNumber: event.target.value });
-          }}
+          handleChange={handelphoneNumberChange}
         />
+
         <br />
-        <label> Loan age:</label>
-        <input
-          type="number"
-          name="age"
+        <InputComponent
+          inputName={"age"}
           value={loanInput.age}
-          onChange={(event) => {
-            setLoanInput({ ...loanInput, age: event.target.value });
-          }}
+          handleChange={handelAgeChange}
         />
+
         <br />
         <label htmlFor="employee">Ary youe an employee</label>
         <input
